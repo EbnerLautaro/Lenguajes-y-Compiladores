@@ -1,0 +1,357 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{amssymb}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children no
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\bottommargin 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Definition*
+Un conjunto de ecuaciones es 
+\series bold
+\emph on
+dirigido por sintaxis
+\series default
+\emph default
+ cuando se satisfacen las siguientes condiciones:
+\end_layout
+
+\begin_layout Itemize
+Hay una ecuación por cada producción de la gramática abstracta.
+\end_layout
+
+\begin_layout Itemize
+Cada ecuación que expresa el signicado de una frase compuesta,
+ lo hace puramente en función de los signicados de sus subfrases inmediatas.
+\end_layout
+
+\begin_layout Definition*
+Se dice que una semántica es 
+\series bold
+\emph on
+composicional
+\series default
+\emph default
+,
+ cuando el signicado de una frase no depende de ninguna propiedad de sus subfrases,
+ salvo de sus signicados.
+ Composicionalidad es muy importante ya que implica que podemos reemplazar una subfrase 
+\emph on
+
+\begin_inset Formula $e_{0}$
+\end_inset
+
+
+\emph default
+ de 
+\begin_inset Formula $e$
+\end_inset
+
+ por otra de igual signicado que 
+\begin_inset Formula $e_{0}$
+\end_inset
+
+ sin alterar el signicado de la frase 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Composicionalidad no es lo mismo que dirección por sintaxis
+\series default
+:
+ composicionalidad habla de una propiedad de la semántica,
+ mientras que dirección por sintaxis habla de la forma en que se denió dicha semántica.
+ Pero por otro lado dirección por sintaxis garantiza composicionalidad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Un 
+\series bold
+\emph on
+predominio
+\series default
+\emph default
+ es un orden parcial 
+\begin_inset Formula $P$
+\end_inset
+
+ tal que todas las cadenas tienen supremo.
+ Otra definicion es:
+ un predominio es un orden parcial 
+\begin_inset Formula $P$
+\end_inset
+
+ al que todas las cadenas interesantes tienen supremo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Un 
+\series bold
+\emph on
+dominio
+\series default
+\emph default
+ es un predominio 
+\begin_inset Formula $D$
+\end_inset
+
+ con elemento minimo (que se suele denotar 
+\begin_inset Formula $\bot$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Sean 
+\begin_inset Formula $P$
+\end_inset
+
+ y 
+\begin_inset Formula $Q$
+\end_inset
+
+ órdenes parciales con 
+\begin_inset Formula $\le_{P}$
+\end_inset
+
+y 
+\begin_inset Formula $\le_{Q}$
+\end_inset
+
+,
+ y sea 
+\begin_inset Formula $f\in P\rightarrow Q$
+\end_inset
+
+.
+ Se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\series bold
+\emph on
+monótona
+\series default
+\emph default
+ si 
+\begin_inset Formula $f$
+\end_inset
+
+ preserva orden,
+ es decir,
+ si 
+\begin_inset Formula $x\le_{P}y$
+\end_inset
+
+ implica 
+\begin_inset Formula $fx\le_{Q}fy$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Sean 
+\begin_inset Formula $P$
+\end_inset
+
+ y 
+\begin_inset Formula $Q$
+\end_inset
+
+ predominios,
+ sea 
+\begin_inset Formula $f\in P\rightarrow Q$
+\end_inset
+
+.
+ Se dice que 
+\begin_inset Formula $f$
+\end_inset
+
+ es 
+\series bold
+\emph on
+continua 
+\series default
+\emph default
+si 
+\begin_inset Formula $f$
+\end_inset
+
+ preserva supremos de cadenas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition*
+Sean 
+\begin_inset Formula $D$
+\end_inset
+
+ y 
+\begin_inset Formula $D'$
+\end_inset
+
+ dominios con 
+\begin_inset Formula $⊥$
+\end_inset
+
+ y 
+\begin_inset Formula $⊥′$
+\end_inset
+
+ respectivamente.
+ Se dice que la función 
+\begin_inset Formula $f\in D\rightarrow D'$
+\end_inset
+
+ es estricta si 
+\begin_inset Formula $f$
+\end_inset
+
+ preserva elemento mínimo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
