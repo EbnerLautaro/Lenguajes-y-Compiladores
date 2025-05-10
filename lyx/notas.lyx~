@@ -152,17 +152,6 @@ composicional
 \end_layout
 
 \begin_layout Standard
-
-\series bold
-Composicionalidad no es lo mismo que dirección por sintaxis
-\series default
-:
- composicionalidad habla de una propiedad de la semántica,
- mientras que dirección por sintaxis habla de la forma en que se denió dicha semántica.
- Pero por otro lado dirección por sintaxis garantiza composicionalidad
-\end_layout
-
-\begin_layout Standard
 \begin_inset Separator plain
 \end_inset
 
@@ -307,7 +296,15 @@ si
 \begin_inset Formula $f$
 \end_inset
 
- preserva supremos de cadenas.
+ preserva supremos de cadenas
+\begin_inset Formula 
+\[
+f\text{ es continua }\qquad\Longleftrightarrow\qquad f(\bigsqcup_{i=0}^{\infty}p_{i})=\bigsqcup_{i=0}^{\infty}f(p_{i})
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -339,7 +336,13 @@ Sean
 \begin_inset Formula $f\in D\rightarrow D'$
 \end_inset
 
- es estricta si 
+ es 
+\series bold
+\emph on
+estricta
+\series default
+\emph default
+ si 
 \begin_inset Formula $f$
 \end_inset
 
@@ -348,6 +351,61 @@ Sean
 
 \begin_layout Standard
 \begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem*
+
+\series bold
+\emph on
+Menor punto fijo
+\series default
+\emph default
+ 
+\emph on
+Sea 
+\begin_inset Formula $D$
+\end_inset
+
+ un dominio,
+ y 
+\begin_inset Formula $F\in D\rightarrow D$
+\end_inset
+
+ continua.
+ Entonces 
+\begin_inset Formula $sup(\{F^{i}\bot\}_{i\in N})$
+\end_inset
+
+ existe y es el menor punto fijo de 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename src/pasted1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename src/pasted2.png
+
 \end_inset
 
 
